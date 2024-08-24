@@ -24,7 +24,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -117,12 +117,12 @@ sup {
 }
 
 a {
-  color: #5533ff;
+  color: #4A4A4A;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #2600e6;
+  color: #242424;
   text-decoration: underline;
 }
 
@@ -316,22 +316,22 @@ template {
 }
 
 :root {
-  --blue: #007bff;
+  --blue: rgb(0, 175, 215);
   --indigo: #6610f2;
-  --purple: #5533ff;
+  --purple: #485CC7;
   --pink: #e83e8c;
   --red: #dc3545;
-  --orange: #fd7e14;
+  --orange: rgb(255, 106, 19);
   --yellow: #ffc107;
-  --green: #28a745;
+  --green: rgb(0, 175, 102);
   --teal: #20c997;
   --cyan: #17a2b8;
-  --white: #fff;
+  --white: rgb(255, 255, 255);
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #5533ff;
+  --primary: #4A4A4A;
   --secondary: #6c757d;
-  --success: #28a745;
+  --success: rgb(0, 175, 102);
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
@@ -404,21 +404,21 @@ template {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #cfc6ff;
+  background-color: #cccccc;
 }
 .table-primary th,
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
-  border-color: #a795ff;
+  border-color: #a1a1a1;
 }
 
 .table-hover .table-primary:hover {
-  background-color: #baadff;
+  background-color: #bfbfbf;
 }
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #baadff;
+  background-color: #bfbfbf;
 }
 
 .table-secondary,
@@ -444,21 +444,21 @@ template {
 .table-success,
 .table-success > th,
 .table-success > td {
-  background-color: #c3e6cb;
+  background-color: #b8e9d4;
 }
 .table-success th,
 .table-success td,
 .table-success thead th,
 .table-success tbody + tbody {
-  border-color: #8fd19e;
+  border-color: #7ad5af;
 }
 
 .table-hover .table-success:hover {
-  background-color: #b1dfbb;
+  background-color: #a5e3c8;
 }
 .table-hover .table-success:hover > td,
 .table-hover .table-success:hover > th {
-  background-color: #b1dfbb;
+  background-color: #a5e3c8;
 }
 
 .table-info,
@@ -576,7 +576,7 @@ template {
 }
 
 .table .thead-dark th, .wp-block-table table .thead-dark th {
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: #343a40;
   border-color: #454d55;
 }
@@ -587,7 +587,7 @@ template {
 }
 
 .table-dark {
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: #343a40;
 }
 .table-dark th,
@@ -602,7 +602,7 @@ template {
   background-color: rgba(255, 255, 255, 0.05);
 }
 .table-dark.table-hover tbody tr:hover {
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.075);
 }
 
@@ -667,7 +667,7 @@ template {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -831,13 +831,13 @@ mark,
 }
 
 .bg-primary {
-  background-color: #5533ff !important;
+  background-color: #4A4A4A !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #2b00ff !important;
+  background-color: #313131 !important;
 }
 
 .bg-secondary {
@@ -851,13 +851,13 @@ button.bg-secondary:focus {
 }
 
 .bg-success {
-  background-color: #28a745 !important;
+  background-color: rgb(0, 175, 102) !important;
 }
 
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: #1e7e34 !important;
+  background-color: #007c48 !important;
 }
 
 .bg-info {
@@ -911,7 +911,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .bg-transparent {
@@ -959,7 +959,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #5533ff !important;
+  border-color: #4A4A4A !important;
 }
 
 .border-secondary {
@@ -967,7 +967,7 @@ button.bg-dark:focus {
 }
 
 .border-success {
-  border-color: #28a745 !important;
+  border-color: rgb(0, 175, 102) !important;
 }
 
 .border-info {
@@ -991,7 +991,7 @@ button.bg-dark:focus {
 }
 
 .border-white {
-  border-color: #fff !important;
+  border-color: rgb(255, 255, 255) !important;
 }
 
 .rounded-sm {
@@ -4166,15 +4166,15 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: #fff !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .text-primary {
-  color: #5533ff !important;
+  color: #4A4A4A !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #2600e6 !important;
+  color: #242424 !important;
 }
 
 .text-secondary {
@@ -4186,11 +4186,11 @@ a.text-secondary:hover, a.text-secondary:focus {
 }
 
 .text-success {
-  color: #28a745 !important;
+  color: rgb(0, 175, 102) !important;
 }
 
 a.text-success:hover, a.text-success:focus {
-  color: #19692c !important;
+  color: #006339 !important;
 }
 
 .text-info {
@@ -4280,16 +4280,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .has-blue-color,
 .has-blue-color:visited {
-  color: #007bff;
+  color: rgb(0, 175, 215);
 }
 
 .has-blue-background-color {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: rgb(0, 175, 215);
+  border-color: rgb(0, 175, 215);
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-blue-color {
-  color: #007bff;
+  color: rgb(0, 175, 215);
 }
 
 .has-indigo-color,
@@ -4308,16 +4308,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .has-purple-color,
 .has-purple-color:visited {
-  color: #5533ff;
+  color: #485CC7;
 }
 
 .has-purple-background-color {
-  background-color: #5533ff;
-  border-color: #5533ff;
+  background-color: #485CC7;
+  border-color: #485CC7;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-purple-color {
-  color: #5533ff;
+  color: #485CC7;
 }
 
 .has-pink-color,
@@ -4350,16 +4350,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .has-orange-color,
 .has-orange-color:visited {
-  color: #fd7e14;
+  color: rgb(255, 106, 19);
 }
 
 .has-orange-background-color {
-  background-color: #fd7e14;
-  border-color: #fd7e14;
+  background-color: rgb(255, 106, 19);
+  border-color: rgb(255, 106, 19);
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-orange-color {
-  color: #fd7e14;
+  color: rgb(255, 106, 19);
 }
 
 .has-yellow-color,
@@ -4378,16 +4378,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .has-green-color,
 .has-green-color:visited {
-  color: #28a745;
+  color: rgb(0, 175, 102);
 }
 
 .has-green-background-color {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: rgb(0, 175, 102);
+  border-color: rgb(0, 175, 102);
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-green-color {
-  color: #28a745;
+  color: rgb(0, 175, 102);
 }
 
 .has-teal-color,
@@ -4420,16 +4420,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .has-white-color,
 .has-white-color:visited {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .has-white-background-color {
-  background-color: #fff;
-  border-color: #fff;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-white-color {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .has-gray-color,
@@ -4462,16 +4462,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #5533ff;
+  color: #4A4A4A;
 }
 
 .has-primary-background-color {
-  background-color: #5533ff;
-  border-color: #5533ff;
+  background-color: #4A4A4A;
+  border-color: #4A4A4A;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-primary-color {
-  color: #5533ff;
+  color: #4A4A4A;
 }
 
 .has-secondary-color,
@@ -4490,16 +4490,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .has-success-color,
 .has-success-color:visited {
-  color: #28a745;
+  color: rgb(0, 175, 102);
 }
 
 .has-success-background-color {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: rgb(0, 175, 102);
+  border-color: rgb(0, 175, 102);
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-success-color {
-  color: #28a745;
+  color: rgb(0, 175, 102);
 }
 
 .has-info-color,
