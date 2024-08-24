@@ -50,4 +50,3 @@ phpcs.xml
 dist/
 dist-product/
 **/img
-src/
