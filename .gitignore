@@ -83,4 +83,5 @@ node_modules
 phpcs.xml
 dist/
 dist-product/
-**/img
+imgs/
+/imgs/
