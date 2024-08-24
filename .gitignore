@@ -23,6 +23,16 @@ npm-debug.log
 
 Thumbs.db
 
+.svn
+
+.cvs
+
+*.bak
+
+*.swp
+
+*.png
+
 # Numerous always-ignore extensions
 *.bak
 *.cvs
