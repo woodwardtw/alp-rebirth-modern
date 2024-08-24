@@ -1,0 +1,25 @@
+
+<svg width="1680px" height="601px" viewBox="0 0 1680 601" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0.348876953" width="1680" height="600"></rect>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OurServices.Inspire" transform="translate(0.000000, -80.000000)">
+            <g id="IDEA_Medallion_Inspire" transform="translate(0.000000, 79.914062)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFA300" xlink:href="#path-1"></use>
+                <g id="Group-6" mask="url(#mask-2)" opacity="1">
+                    <g transform="translate(488.000000, 390.000000)" id="Oval">
+                        <circle stroke="#ff9700" stroke-width="70" fill="none" style="mix-blend-mode: multiply;" cx="351.867187" cy="352.130859" r="316.134766"></circle>
+                        <circle stroke="none" fill="#ff9700" fill-rule="evenodd" style="mix-blend-mode: multiply;" cx="351.867187" cy="352.130859" r="249.927734"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+
