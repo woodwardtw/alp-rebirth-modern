@@ -3,6 +3,26 @@
 # - https://git-scm.com/docs/gitignore
 # ------------------------------------------------------------------------
 
+.sass-cache
+
+bower_components
+
+node_modules
+
+understrap.zip
+
+dist
+
+dist-product
+
+npm-debug.log
+
+/vendor/
+
+.DS_Store
+
+Thumbs.db
+
 # Numerous always-ignore extensions
 *.bak
 *.cvs
