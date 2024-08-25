@@ -6,6 +6,7 @@
             "key": "field_5b381e8539d18",
             "label": "District Overview",
             "name": "district_overview",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_5b381ee74d1c2",
             "label": "Featured Image",
             "name": "district_featured_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -49,6 +51,7 @@
             "key": "field_5b381f144d1c3",
             "label": "Featured Services",
             "name": "key_services",
+            "aria-label": "",
             "type": "taxonomy",
             "instructions": "",
             "required": 0,
@@ -65,12 +68,14 @@
             "save_terms": 0,
             "load_terms": 0,
             "return_format": "object",
-            "multiple": 0
+            "multiple": 0,
+            "bidirectional_target": []
         },
         {
             "key": "field_5b381f4b50f2b",
             "label": "District Demographics",
             "name": "district_demographics",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -84,12 +89,13 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_5b381f71ac657",
                     "label": "Descriptor",
                     "name": "descriptor",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -103,14 +109,17 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5b381f4b50f2b"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         },
         {
             "key": "field_5b3821956c5da",
             "label": "Timeline",
             "name": "timeline",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -124,12 +133,13 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Add Row",
             "sub_fields": [
                 {
                     "key": "field_5b3821b278f06",
                     "label": "Event Category",
                     "name": "event_category",
+                    "aria-label": "",
                     "type": "taxonomy",
                     "instructions": "",
                     "required": 0,
@@ -146,12 +156,15 @@
                     "save_terms": 0,
                     "load_terms": 0,
                     "return_format": "id",
-                    "multiple": 0
+                    "multiple": 0,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_5b3821956c5da"
                 },
                 {
                     "key": "field_5b3821c978f07",
                     "label": "Event Descriptor",
                     "name": "event_descriptor",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -165,58 +178,14 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_5b3821da78f08",
-                    "label": "Event Year",
-                    "name": "event_year",
-                    "type": "select",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "2000": "2000",
-                        "2001": "2001",
-                        "2002": "2002",
-                        "2003": "2003",
-                        "2004": "2004",
-                        "2005": "2005",
-                        "2006": "2006",
-                        "2007": "2007",
-                        "2008": "2008",
-                        "2009": "2009",
-                        "2010": "2010",
-                        "2011": "2011",
-                        "2012": "2012",
-                        "2013": "2013",
-                        "2014": "2014",
-                        "2015": "2015",
-                        "2016": "2016",
-                        "2017": "2017",
-                        "2018": "2018",
-                        "2019": "2019",
-                        "2020": "2020",
-                        "2021": "2021",
-                        "2022": "2022"
-                    },
-                    "default_value": [],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "return_format": "value",
-                    "placeholder": ""
+                    "new_lines": "",
+                    "parent_repeater": "field_5b3821956c5da"
                 },
                 {
                     "key": "field_5b38223f405d8",
                     "label": "Event Season",
                     "name": "event_season",
+                    "aria-label": "",
                     "type": "select",
                     "instructions": "",
                     "required": 0,
@@ -238,12 +207,14 @@
                     "ui": 0,
                     "ajax": 0,
                     "return_format": "value",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "parent_repeater": "field_5b3821956c5da"
                 },
                 {
                     "key": "field_5b393d981c083",
                     "label": "Image",
                     "name": "timeline_image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -262,9 +233,11 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "parent_repeater": "field_5b3821956c5da"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         }
     ],
     "location": [
@@ -284,5 +257,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1610652599
+    "show_in_rest": 0,
+    "modified": 1699020676
 }
