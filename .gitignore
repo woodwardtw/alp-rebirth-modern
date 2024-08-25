@@ -4,37 +4,19 @@
 # ------------------------------------------------------------------------
 
 .sass-cache
-
 bower_components
-
 node_modules
-
 understrap.zip
-
 dist
-
 src
-
 imgs
-
 dist-product
-
 npm-debug.log
-
 /vendor/
-
 .DS_Store
-
 Thumbs.db
-
 .svn
-
-.cvs
-
-*.bak
-
 *.swp
-
 *.png
 
 # Numerous always-ignore extensions
@@ -83,5 +65,5 @@ node_modules
 phpcs.xml
 dist/
 dist-product/
-imgs
+/imgs/
 **/img
