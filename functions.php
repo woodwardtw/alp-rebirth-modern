@@ -506,9 +506,9 @@ function get_the_district_services(){
       $parent_id = $service->parent;
         $parent = get_term_by('id', $parent_id, 'service');
         $parent_slug = $parent->slug;
-        $html .= '<a href="../../services/'. $parent_slug .'#' . $service->slug . '"><div class="service-offer"><div class="service-name icon-' . sanitize_title($service->name) . ' ' . $parent_slug . '">';
+        $html .= '<div class="col-md-4"><a href="../../services/'. $parent_slug .'#' . $service->slug . '"><div class="service-offer"><div class="service-name icon-' . sanitize_title($service->name) . ' ' . $parent_slug . '">';
         $html .= $service->name;
-        $html .= '</div></div></a>';
+        $html .= '</div></div></a></div>';
       }
     }
     return $html;
