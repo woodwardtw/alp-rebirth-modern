@@ -84,4 +84,4 @@ phpcs.xml
 dist/
 dist-product/
 imgs
-/imgs/
+**/img
