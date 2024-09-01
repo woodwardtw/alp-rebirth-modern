@@ -164,7 +164,7 @@
                 $title_slug = sanitize_title($accord_title);
                 echo "<h2 class='lead trio-header' id='{$title_slug}'>{$accord_title}</h2>";
             }
-            echo "<div class='accordion' id='accordion-{$index}'>";
+            echo "<div class='accordion accordion-flush' id='accordion-{$index}'>";
             foreach($accordion_parts as $piece){
                 $title = $piece['title'];
                 $slug = sanitize_title($title);
@@ -232,7 +232,7 @@
                     <div class='col-md-8 offset-md-2 posts-loop'>
                         <div class='post-block'>
                             <a class='post-link stretched-link' href='{$url}'>
-                                <h3>{$title}</h3>                           
+                                <h3 class='accordion-title'>{$title}</h3>                           
                                 <p>{$excerpt}</p>
                              </a>
                         </div>
