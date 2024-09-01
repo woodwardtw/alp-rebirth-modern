@@ -131,8 +131,9 @@
                     foreach($persons as $person){
                         $post_id = $person;
                         $name = get_the_title($post_id);
-                        $title = get_field('job_title', $post_id);
-                        $img = alp_person_thumb_check($post_id, 'portrait', 'free-bio-pic img-fluid');
+                        $job_title = get_the_alp_title($post_id);
+                        $img_src = get_the_bio_img('faculty', $post_id);
+                        $img = "<img src='{$img_src}' class='img-fluid team-bio-single'>";
                         $email_html = '';
                         if(get_field('email', $post_id)){
                             $email = get_field('email', $post_id);
@@ -140,13 +141,15 @@
                         }
                         $link = get_permalink( $post_id);
                         echo "
-                        <div class='col-md-4 person-holder'>
-                            <div class='person-block'>
+                        <div class='col-md-4 person-holder team-square leadership'>
+                            <div class='card'>
+                                <div class='card-body leadership'>
                                 {$img}
-                                <a href='{$link}'><h2 class='small-name'>{$name}</h2></a>
-                                <div class='title'>{$title}</div>
-                                <div class='small-contact'>
-                                    {$email_html}
+                                    <a href='{$link}'><h2 class='small-name'>{$name}</h2></a>
+                                    <div class='title'>{$job_title}</div>
+                                    <div class='small-contact'>
+                                        {$email_html}
+                                    </div>
                                 </div>
                             </div>
                         </div>

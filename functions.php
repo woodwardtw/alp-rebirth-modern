@@ -2570,15 +2570,3 @@ function alp_topic_menu(){
   }
  }
 
-function alp_person_thumb_check(){
-  global $post;
-  $post_id = $post->ID;
-  $class ='img-fluid';
-  $url_stem = get_template_directory_uri();
-  if(has_post_thumbnail($post_id)){
-        $image = get_the_post_thumbnail( $post_id, $size, array( 'class' => $class) );
-      } else {
-        $image = "<img src='{$url_stem}/imgs/no-pic.svg' class='{$class}' alt='A generic face placeholder.'>";
-      }
-  return $image;
-}
