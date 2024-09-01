@@ -2509,3 +2509,63 @@ function alp_podcast_service($field){
     return "<a href='{$url}' title='Listen on {$service}s.'><img src='$img' class='img-fluid podcast-icon' alt='{$service} icon.'></a>";
   }
 }
+
+
+function alp_remove_www($string){
+  $string = strtolower($string);
+  if(str_contains($string, 'www.')){
+    $string = str_replace('www.', '', $string);
+    return $string;
+  }
+  return $string;
+}
+
+
+
+//topic functions
+function alp_topic_menu(){
+  if ( have_rows('content') ) {
+    echo "<div class='menu-block'>
+    <h2 class='trio-header'>Menu</h2>
+    <ul class='sub-topic-list'>";
+     while( have_rows('content') ) : the_row(); 
+      if( get_row_layout() == 'sub_topic'){
+        $title = get_sub_field('sub_topic_title');
+        alp_topic_menu_title($title);
+      }
+      if( get_row_layout() == 'image'){
+        $title = get_sub_field('title');
+        alp_topic_menu_title($title);
+      }
+      if( get_row_layout() == 'full_block'){
+        $title = get_sub_field('title');
+        alp_topic_menu_title($title);
+      }
+      if( get_row_layout() == 'accordion'){
+        $title = get_sub_field('accordion_title');
+        alp_topic_menu_title($title);
+      }
+      if( get_row_layout() == 'posts'){
+        $title = get_sub_field('title');
+        alp_topic_menu_title($title);
+      }
+      if( get_row_layout() == 'people'){
+        $title = get_sub_field('title');
+        alp_topic_menu_title($title);
+      }
+  
+     endwhile;
+  echo "</ul></div>";
+  }
+}
+ 
+ function alp_topic_menu_title($title){
+  if($title){
+    $slug = sanitize_title($title);
+        echo "      
+          <li class='sub-topic'>
+            <a href='#{$slug}'>{$title}</a>
+          </li>
+      ";
+  }
+ }

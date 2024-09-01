@@ -56,49 +56,24 @@
 			</div>
 
 			<!--TWEET SLIDER-->
-
-			<?php if (has_twitter_account ()):
-					$account = get_twitter_account();
-			?>
-				<div class="row tweet-row">
-					<div class="col-md-3 tweet-center tweet-control">
-					<i class="fa fa-twitter"></i>
-					<div class="tweet-tag">@<?php $account = get_twitter_account(); echo $account;?></div>
-						<a class="carousel-control-prev tweet-less" href="#carouselTweetControls" role="button" data-slide="prev">		
-							<span class="tweet-nav left"><i class="fa fa-arrow-left"></i></span>
-						</a>
-						<a class="carousel-control-next tweet-more" href="#carouselTweetControls" role="button" data-slide="next">
-							<span class="tweet-nav right"><i class="fa fa-arrow-right"></i></span>
-						</a>
-					</div>
-					<div id="carouselTweetControls" class="carousel slide col-md-9" data-ride="false" data-interval="false">
-						<div class="carousel-inner">
-						<!--TWEETS START-->
-							<?php 
-							echo get_user_tweets($account);?>
-						<!--ITEMS END-->
-						</div>
-					</div>
-				</div>
-			<? endif; ?>	
 			<!--TWEET END-->
 			</div>
 		</div>	
 	</article>
 </div>
-<?php if (get_faculty_cat() === 'Leadership'):?>
 	<div class="light-blue">
 		<div class="container">
 				<div class="col-md-12 faculty-touch">
-					<h2>Want to get in touch with <?php echo get_faculty_first_name();?>?</h2>
-					<a href="mailto:<?php echo acf_fetch_email_address();?>"><button class="btn btn-primary btn-dark btn-alp action-one-button">Reach Out</button></a>
-					</div>
+					<?php if (get_faculty_cat() === 'Leadership'):?>
+						<h2>Want to get in touch with <?php echo get_faculty_first_name();?>?</h2>
+						<a href="mailto:<?php echo acf_fetch_email_address();?>"><button class="btn btn-primary btn-dark btn-alp action-one-button">Reach Out</button></a>
+						</div>
+					<?php endif; ?>		
 					<div class="col-md-12 faculty-social d-flex justify-content-center">
 						<?php echo get_the_social();?>
 					</div> 
 		</div>
 	</div><!-- .entry-content -->
-<?php endif; ?>		
 
 	<footer class="faculty-footer">
 

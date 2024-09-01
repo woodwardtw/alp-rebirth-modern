@@ -21,9 +21,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<main class="site-main" id="main" role="main">
 
+					<!-- .entry-content -->
+
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<?php get_template_part( 'loop-templates/content', 'topic' ); ?>
+						<?php get_template_part( 'loop-templates/content', 'flexcontent' );?>
 											
 					<?php endwhile; // end of the loop. ?>
 					
