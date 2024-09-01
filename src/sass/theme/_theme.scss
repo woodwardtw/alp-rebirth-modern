@@ -17118,10 +17118,17 @@ a.btn-alp{
 
 .posts-loop a.post-link{
   display: block;
+  background-image: none;
 }
 
-.posts-loop a.post-link h3{
+.posts-loop a.post-link:hover{
+  border-left: 4px solid $gold;
+  background-image: none;
+}
+
+.posts-loop .post-link h3{
   padding-top: 20px;
+  padding-left: .4em;
 }
 
 .posts-loop a.post-link p {

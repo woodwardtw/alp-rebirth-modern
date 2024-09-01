@@ -203,10 +203,11 @@
          
             $cats = get_sub_field('category');
             $type = get_sub_field('post_type');
+            $limit = get_sub_field('max_responses');
             $args = array(
                 'category__and' => $cats,
                 'post_type' => $type,
-                'posts_per_page' => -1,
+                'posts_per_page' => $limit,
                 'paged' => get_query_var('paged')
             );
             $the_query = new WP_Query( $args );

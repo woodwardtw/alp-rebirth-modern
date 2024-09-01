@@ -538,16 +538,18 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
+                            "relevanssi_exclude": 0,
                             "taxonomy": "category",
-                            "add_term": 0,
-                            "save_terms": 0,
+                            "add_term": 1,
+                            "save_terms": 1,
                             "load_terms": 0,
                             "return_format": "id",
                             "field_type": "checkbox",
+                            "allow_in_bindings": 1,
                             "bidirectional": 0,
                             "multiple": 0,
                             "allow_null": 0,
@@ -563,7 +565,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
@@ -578,8 +580,33 @@
                             "return_format": "value",
                             "allow_null": 0,
                             "other_choice": 0,
+                            "allow_in_bindings": 1,
                             "layout": "vertical",
                             "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_66d461b97b8e3",
+                            "label": "Maximum responses",
+                            "name": "max_responses",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": 10,
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
                         }
                     ],
                     "min": "",
@@ -726,5 +753,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1724938583
+    "modified": 1725194823
 }
