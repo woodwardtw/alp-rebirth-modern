@@ -389,8 +389,9 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "relevanssi_exclude": 0,
                             "post_type": [
-                                "person"
+                                "faculty"
                             ],
                             "post_status": [
                                 "publish"
@@ -399,6 +400,7 @@
                             "return_format": "id",
                             "multiple": 1,
                             "allow_null": 0,
+                            "allow_in_bindings": 1,
                             "bidirectional": 0,
                             "ui": 1,
                             "bidirectional_target": []
@@ -753,5 +755,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1725194823
+    "modified": 1725196584
 }
