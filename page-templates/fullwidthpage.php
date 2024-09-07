@@ -25,7 +25,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 
 <div class="wrapper" id="<?php echo $wrapper_id; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- ok. ?>">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
+	<div class="container" id="content">
 
 		<div class="row">
 
