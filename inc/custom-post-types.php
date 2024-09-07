@@ -127,7 +127,7 @@ function create_quote_cpt() {
     'show_in_rest' => true,
     'publicly_queryable' => true,
     'capability_type' => 'post',
-    'menu_icon' => 'dashicons-heart',
+    'menu_icon' => 'dashicons-format-quote',
   );
   register_post_type( 'quote', $args );
   
@@ -336,6 +336,72 @@ function create_resource_cpt() {
 }
 add_action( 'init', 'create_resource_cpt', 0 );
 
+
+//cohort custom post type
+
+// Register Custom Post Type cohort
+// Post Type Key: cohort
+
+function create_cohort_cpt() {
+
+  $labels = array(
+    'name' => __( 'Cohorts', 'Post Type General Name', 'textdomain' ),
+    'singular_name' => __( 'Cohort', 'Post Type Singular Name', 'textdomain' ),
+    'menu_name' => __( 'Cohort', 'textdomain' ),
+    'name_admin_bar' => __( 'Cohort', 'textdomain' ),
+    'archives' => __( 'Cohort Archives', 'textdomain' ),
+    'attributes' => __( 'Cohort Attributes', 'textdomain' ),
+    'parent_item_colon' => __( 'Cohort:', 'textdomain' ),
+    'all_items' => __( 'All Cohorts', 'textdomain' ),
+    'add_new_item' => __( 'Add New Cohort', 'textdomain' ),
+    'add_new' => __( 'Add New', 'textdomain' ),
+    'new_item' => __( 'New Cohort', 'textdomain' ),
+    'edit_item' => __( 'Edit Cohort', 'textdomain' ),
+    'update_item' => __( 'Update Cohort', 'textdomain' ),
+    'view_item' => __( 'View Cohort', 'textdomain' ),
+    'view_items' => __( 'View Cohorts', 'textdomain' ),
+    'search_items' => __( 'Search Cohorts', 'textdomain' ),
+    'not_found' => __( 'Not found', 'textdomain' ),
+    'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
+    'featured_image' => __( 'Featured Image', 'textdomain' ),
+    'set_featured_image' => __( 'Set featured image', 'textdomain' ),
+    'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
+    'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
+    'insert_into_item' => __( 'Insert into cohort', 'textdomain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this cohort', 'textdomain' ),
+    'items_list' => __( 'Cohort list', 'textdomain' ),
+    'items_list_navigation' => __( 'Cohort list navigation', 'textdomain' ),
+    'filter_items_list' => __( 'Filter Cohort list', 'textdomain' ),
+  );
+  $args = array(
+    'label' => __( 'cohort', 'textdomain' ),
+    'description' => __( '', 'textdomain' ),
+    'labels' => $labels,
+    'menu_icon' => '',
+    'supports' => array('title', 'editor', 'revisions', 'author', 'trackbacks', 'custom-fields', 'thumbnail',),
+    'taxonomies' => array('category', 'post_tag'),
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'menu_position' => 5,
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+    'can_export' => true,
+    'has_archive' => true,
+    'hierarchical' => true,
+    'exclude_from_search' => false,
+    'show_in_rest' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'page',
+    'menu_icon' => 'dashicons-groups',
+  );
+  register_post_type( 'cohort', $args );
+  
+  // flush rewrite rules because we changed the permalink structure
+  global $wp_rewrite;
+  $wp_rewrite->flush_rules();
+}
+add_action( 'init', 'create_cohort_cpt', 0 );
 
 //add_action( 'init', 'create_pathway_taxonomies', 0 );
 function create_pathway_taxonomies()

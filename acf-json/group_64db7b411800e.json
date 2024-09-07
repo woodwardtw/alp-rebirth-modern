@@ -741,6 +741,13 @@
                 "operator": "==",
                 "value": "page-templates\/fulldwidthpage-topic.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cohort"
+            }
         ]
     ],
     "menu_order": 0,
@@ -755,5 +762,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1725196584
+    "modified": 1725748763
 }
