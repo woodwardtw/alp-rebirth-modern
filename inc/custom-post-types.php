@@ -311,8 +311,7 @@ function create_resource_cpt() {
     'label' => __( 'resource', 'textdomain' ),
     'description' => __( '', 'textdomain' ),
     'labels' => $labels,
-    'menu_icon' => '',
-    'supports' => array('title', 'editor', 'revisions', 'author', 'trackbacks', 'custom-fields', 'thumbnail',),
+    'supports' => array('title', 'editor', 'revisions', 'author', 'trackbacks', 'custom-fields', 'thumbnail'),
     'taxonomies' => array('category', 'post_tag'),
     'public' => true,
     'show_ui' => true,
@@ -327,7 +326,7 @@ function create_resource_cpt() {
     'show_in_rest' => true,
     'publicly_queryable' => true,
     'capability_type' => 'post',
-    'menu_icon' => 'dashicons-universal-access-alt',
+    'menu_icon' => 'dashicons-admin-links',
   );
   register_post_type( 'resource', $args );
   

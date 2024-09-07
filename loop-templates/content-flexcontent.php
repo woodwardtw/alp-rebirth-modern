@@ -144,13 +144,15 @@
                         <div class='col-md-4 person-holder team-square leadership'>
                             <div class='card'>
                                 <div class='card-body leadership'>
-                                {$img}
-                                    <a href='{$link}'><h2 class='small-name'>{$name}</h2></a>
-                                    <div class='title'>{$job_title}</div>
-                                    <div class='small-contact'>
-                                        {$email_html}
-                                    </div>
-                                </div>
+                                    <a href='{$link}' class='stretched-link'>
+                                        {$img}
+                                        <h2 class='small-name'>{$name}</h2>
+                                        <div class='title'>{$job_title}</div>
+                                        <div class='small-contact'>
+                                            {$email_html}
+                                        </div>
+                                    </a>
+                                </div>                           
                             </div>
                         </div>
                         ";
