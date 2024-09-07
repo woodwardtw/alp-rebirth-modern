@@ -33893,7 +33893,8 @@ select {
 .icon-learner-centered-experience-design,
 .icon-tookit,
 .icon-field-guide-development,
-.icon-toolkit-field-guide-development .service-name.design {
+.icon-toolkit-field-guide-development,
+.service-name.design {
   background-image: url(../imgs/green.svg);
   background-repeat: no-repeat;
   background-size: 32px 32px;
