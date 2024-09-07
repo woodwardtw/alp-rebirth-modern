@@ -9,6 +9,7 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="entry-content stories-agg">
+		<a href="../podcasts" class="btn btn-alp btn-dark">Our Podcasts</a>
 		<div class="col-md-12">
 
 			<div class="row stories-three row-eq-height">
