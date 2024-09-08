@@ -258,22 +258,23 @@
         ?>        
         <?php endif;?>
         <!--challenge loop-->
-         <?php if( get_row_layout() == 'challenge' ): 
-            $title = get_sub_field('challenge_title');
-            $content = get_sub_field('challenge_description');
-            $form = get_sub_field('form_id');
+         <?php if( get_row_layout() == 'two_column' ): 
+            $title = get_sub_field('title');
+            $left = get_sub_field('left_column');
+            $right = get_sub_field('right_column');
             $slug = sanitize_title($title);
-        ?>
+        ?>        
             <div class='row topic-row full-width-row'>
-				<div class='col-md-8 offset-md-2'>
-                    <?php if($title):?>
+                <?php if($title):?>
+                    <div class='col-md-8 offset-md-2'>
                         <h2 class='lead trio-header' id="<?php echo $slug;?>"><?php echo $title;?></h2>
-                    <?php endif;?>
-                    <?php echo $content;?>
-                    <?php if ($form > 0) {
-                        gravity_form($form);//show form
-                        dlinq_gf_form_entry_display($form);//show form entries
-                        }?>
+                    </div>
+                <?php endif;?>
+				<div class='col-md-4 offset-md-2'>
+                    <?php echo $left;?>                    
+                </div>
+                <div class='col-md-4'>
+                    <?php echo $right;?>                    
                 </div>
             </div>
         </div>
