@@ -22,9 +22,10 @@
             $title = get_sub_field('sub_topic_title');
             $slug = sanitize_title($title);
             $resources = get_sub_field('resources');
+            $size = alp_topic_row_size($resources);
         ?>
             <div class='row topic-row'>
-				<div class='col-md-6'>
+				<div class='col-md-<?php echo $size;?>'>
 					<div class='sub-topic'>
                         <?php if (get_sub_field('sub_topic_title')): ?>
 						<h2 class="lead trio-header" id='<?php echo $slug;?>'><?php echo $title; ?></h2>
@@ -32,6 +33,7 @@
 						<?php the_sub_field('sub_topic_content'); ?>
 					</div>
 				</div>
+            <?php if($resources != '') :?>
 				<div class='col-md-5 offset-md-1'>
                     <?php if($resources):                    
                         echo "<div class='menu-block'>
@@ -67,6 +69,8 @@
                         }
                         echo "</ul></div>";
                     ?>
+                    <?php endif;?>
+
                     <?php endif;?>
 				</div>
 			</div>
@@ -193,7 +197,7 @@
             echo "</div></div>";
         ?>
         <?php endif?>
-        <!--CUSTOM POSTS BY CATEGORY-->
+        <!--CUSTOM POSTS BY CATEGORY AND/OR TAG-->
         <?php if( get_row_layout() == 'posts' ):
                 $title = 'Learn more';
                 if(get_sub_field('title')){
@@ -207,12 +211,15 @@
                         ";
          
             $cats = get_sub_field('category');
+            $tags = get_sub_field('tags');
             $type = get_sub_field('post_type');
             $limit = get_sub_field('max_responses');
+
             $args = array(
-                'category__and' => $cats,
+                'category__and' => $cats,//has all the categories
                 'post_type' => $type,
                 'posts_per_page' => $limit,
+                'tag__and' => $tags,//has all the tags
                 'paged' => get_query_var('paged')
             );
             $the_query = new WP_Query( $args );

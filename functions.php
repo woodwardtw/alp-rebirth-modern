@@ -2570,3 +2570,12 @@ function alp_topic_menu(){
   }
  }
 
+/*column size for topics - if has/doesn't have resources*/
+function alp_topic_row_size($resources){
+  if($resources !=''){
+    return '6';
+  } else {
+    return '10 offset-md-1';
+  }
+
+}

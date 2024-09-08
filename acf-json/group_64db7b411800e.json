@@ -540,7 +540,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "33",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -567,16 +567,14 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "33",
+                                "width": "22",
                                 "class": "",
                                 "id": ""
                             },
                             "relevanssi_exclude": 0,
                             "choices": {
                                 "post": "Posts",
-                                "project": "Projects",
-                                "quote": "Quotes",
-                                "workshop": "Workshops"
+                                "resource": "Resources"
                             },
                             "default_value": "post",
                             "return_format": "value",
@@ -585,6 +583,33 @@
                             "allow_in_bindings": 1,
                             "layout": "vertical",
                             "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_66dda793e2773",
+                            "label": "Tags",
+                            "name": "tags",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "taxonomy": "post_tag",
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "field_type": "multi_select",
+                            "allow_null": 1,
+                            "allow_in_bindings": 0,
+                            "bidirectional": 0,
+                            "multiple": 0,
+                            "bidirectional_target": []
                         },
                         {
                             "key": "field_66d461b97b8e3",
@@ -596,7 +621,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "33",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -762,5 +787,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1725748763
+    "modified": 1725802532
 }
