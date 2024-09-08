@@ -86,4 +86,19 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		  <button type="button" class="btn-alp btn-dark btn" data-toggle="modal" data-target="#contactModal">Contact Us</button>
 	</div>
 </div>
+<!--CONTACT Modal -->
+<div class="modal fade" id="resourceModal" tabindex="-1" role="dialog" aria-labelledby="the-greeting" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+        <h2 class="modal-title" id="the-greeting">Resource Submission</h2>       
+      </div>
+      <div class="modal-body">
+        <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]');?>
+      </div>      
+    </div>
+  </div>
+</div>
+    <!-- END Modal -->
 <?php get_footer(); ?>
