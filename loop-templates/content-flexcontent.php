@@ -127,10 +127,12 @@
         ?>
             <div class='row topic-row full-width-row d-flex justify-content-around people-row'>
             <?php if($title):?>
-                <div class="col-md-12">
+                <div class="col-md-10 offset-md-2">
                     <h2 class="lead trio-header" id="<?php echo $slug?>"><?php echo $title;?></h2>
                 </div>
             <?php endif;?>
+            <div class="col-md-8">
+                <div class="row">
 				<?php                   
                     foreach($persons as $person){
                         $post_id = $person;
@@ -145,7 +147,7 @@
                         }
                         $link = get_permalink( $post_id);
                         echo "
-                        <div class='col-md-4 person-holder team-square leadership'>
+                        <div class='col-md-3 person-holder team-square leadership'>
                             <div class='card'>
                                 <div class='card-body leadership'>
                                     <a href='{$link}' class='stretched-link'>
@@ -163,6 +165,8 @@
                     }
                 ?>
             </div>
+        </div>
+    </div>
         <?php endif;?>
           <!--accordion loop-->
          <?php if( get_row_layout() == 'accordion' ): 
