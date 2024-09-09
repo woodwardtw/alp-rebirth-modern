@@ -27,30 +27,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 						<?php get_template_part( 'loop-templates/content', 'flexcontent' );?>
 											
 					<?php endwhile; // end of the loop. ?>
-					
-					
- 				<!--stories-->
-				
-				<!--end stories-->	
-				<!--tweets-->
-				<!-- <div class="blue-row">
-					<div class="container">
-						<div class="row tweet-row">
-							<div class="col-md-3 tweet-center tweet-control">
-								<i class="fa fa-twitter"></i>
-								<div class="tweet-tag">#ALPLearn</div>
-								<a class="carousel-control-prev tweet-less" href="#carouselTweetControls" role="button" data-slide="prev">		
-								 	<span class="tweet-nav left"><i class="arrow-left"></i></span>
-								</a>
-								<a class="carousel-control-next tweet-more" href="#carouselTweetControls" role="button" data-slide="next">
-									<span class="tweet-nav right"><i class="arrow-right"></i></span>
-								</a>
-							</div>
-							<div id="carouselTweetControls" class="carousel slide col-md-9" data-ride="false" data-interval="false">
-								<div class="carousel-inner">
-									<!--TWEETS START-->
-								    
-									<!--ITEMS END-->
+								
 								</div>
 							</div>
 						</div> 

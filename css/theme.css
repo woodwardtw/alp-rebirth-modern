@@ -34967,4 +34967,13 @@ a.btn-alp {
   padding: 40px 0;
 }
 
+.attribution {
+  font-size: 0.8em;
+  font-weight: 400;
+  padding: 5px 10px;
+  background-color: #F8FAFF;
+  display: inline-block;
+  min-width: 200px;
+}
+
 /*# sourceMappingURL=theme.css.map */

@@ -73,7 +73,7 @@
 
                     <?php endif;?>
 				</div>
-			</div>
+			
         <!--IMAGE LOOP-->            
         <?php elseif( get_row_layout() == 'image' ): 
             $title = get_sub_field('title');
@@ -111,7 +111,7 @@
             $slug = sanitize_title($title);
         ?>
             <div class='row topic-row full-width-row'>
-				<div class='col-md-8 offset-md-2'>
+				<div class='col-md-12'>
                     <?php if($title):?>
                         <h2 class="lead trio-header" id="<?php echo $slug?>"><?php echo $title;?></h2>
                     <?php endif;?>
@@ -125,14 +125,13 @@
             $title = get_sub_field('title');
             $slug = sanitize_title($title);
         ?>
-            <div class='row topic-row full-width-row d-flex justify-content-around people-row'>
+            <div class='row topic-row d-flex justify-content-around people-row'>
             <?php if($title):?>
-                <div class="col-md-10 offset-md-2">
+                <div class="col-md-12">
                     <h2 class="lead trio-header" id="<?php echo $slug?>"><?php echo $title;?></h2>
                 </div>
             <?php endif;?>
-            <div class="col-md-8">
-                <div class="row">
+           
 				<?php                   
                     foreach($persons as $person){
                         $post_id = $person;
@@ -165,8 +164,7 @@
                     }
                 ?>
             </div>
-        </div>
-    </div>
+    
         <?php endif;?>
           <!--accordion loop-->
          <?php if( get_row_layout() == 'accordion' ): 
@@ -209,7 +207,7 @@
                 }
         $slug = sanitize_title( $title);
             echo "<div class='row topic-row full-width-row'>
-                    <div class='col-md-8 offset-md-2'>
+                    <div class='col-md-10 offset-md-1'>
                         <h2 class='lead trio-header' id='{$slug}'>{$title}</h2>
                     </div>
                         ";
@@ -229,27 +227,31 @@
             $the_query = new WP_Query( $args );
 
             // The Loop
-            if ( $the_query->have_posts() ) :
+            if ( $the_query->have_posts($attribution = NULL) ) :
                 while ( $the_query->have_posts() ) : $the_query->the_post();
                 // Do Stuff
+                $post_id = get_the_ID();
                 $title = get_the_title();
                 $url = get_the_permalink();
+                if(get_field('resource_url', $post_id)){
+                    $url = get_field('resource_url', $post_id);
+                }
+                 if(get_field('creator', $post_id)){
+                    $attribution = "<div class='attribution'>Created by: ".get_field('creator', $post_id)."</div>";
+                }
+
                 if(get_the_content()){
                      $excerpt = wp_trim_words(get_the_content(), 30);
-                }
-                if(get_field('project_summary')){
-                   $excerpt =  wp_trim_words(get_field('project_summary'), 30); 
-                }
-                if(get_field('workshop_description')){
-                   $excerpt =  wp_trim_words(get_field('workshop_description'), 30); 
-                }
+                }                
                
                 echo "
-                    <div class='col-md-8 offset-md-2 posts-loop'>
+                    <div class='col-md-10 offset-md-1 posts-loop'>
                         <div class='post-block'>
                             <a class='post-link stretched-link' href='{$url}'>
                                 <h3 class='accordion-title'>{$title}</h3>                           
+                                {$attribution}
                                 <p>{$excerpt}</p>
+                                
                              </a>
                         </div>
                     </div>
@@ -270,14 +272,14 @@
         ?>        
             <div class='row topic-row full-width-row'>
                 <?php if($title):?>
-                    <div class='col-md-8 offset-md-2'>
+                    <div class='col-md-12'>
                         <h2 class='lead trio-header' id="<?php echo $slug;?>"><?php echo $title;?></h2>
                     </div>
                 <?php endif;?>
-				<div class='col-md-4 offset-md-2'>
+				<div class='col-md-6'>
                     <?php echo $left;?>                    
                 </div>
-                <div class='col-md-4'>
+                <div class='col-md-6'>
                     <?php echo $right;?>                    
                 </div>
             </div>
