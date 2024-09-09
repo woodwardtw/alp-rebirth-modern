@@ -72,7 +72,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
         <h2 class="modal-title" id="the-greeting">Resource Submission</h2>       
       </div>
       <div class="modal-body">
-        <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]');?>
+        <?php echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="true"]');?>
       </div>      
     </div>
   </div>
