@@ -41,7 +41,7 @@
 				<div class="col-md-12 team-leadership team-row">
 					<h2>Our Team</h2>
 				</div>
-				<?php echo get_faculty_bios('leadership');?>
+				<?php get_leadership_bios();?>
 			</div>		
 			<!--end leadership photos-->
 
