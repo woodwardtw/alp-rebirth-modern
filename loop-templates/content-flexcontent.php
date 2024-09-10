@@ -146,7 +146,7 @@
                         }
                         $link = get_permalink( $post_id);
                         echo "
-                        <div class='col-md-3 person-holder team-square leadership'>
+                        <div class='col-md-4 person-holder team-square leadership'>
                             <div class='card'>
                                 <div class='card-body leadership'>
                                     <a href='{$link}' class='stretched-link'>
