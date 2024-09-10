@@ -9,7 +9,6 @@ node_modules
 understrap.zip
 dist
 src
-imgs
 dist-product
 npm-debug.log
 /vendor/
