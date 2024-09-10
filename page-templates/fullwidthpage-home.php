@@ -111,7 +111,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="container">
  					<h2 class="second-home-header d-flex justify-content-center" id="latest-stories">Latest Stories</h2>
  					<div class="row stories row-eq-height">
-						<?php echo story_maker();?>
+						<?php echo most_recent();?>
 						 <a href="<?php echo get_home_url().'/our-stories';?>" class="btn btn-alp btn-dark stories-button d-flex justify-content-center">View Our Stories</a>
  					</div>
  				</div>	
