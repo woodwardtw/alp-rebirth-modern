@@ -30506,7 +30506,8 @@ p {
 
 .btn-alp,
 #gform_submit_button_1,
-#gform_submit_button_2 {
+#gform_submit_button_2,
+#gform_submit_button_3 {
   border-radius: 68px;
   text-transform: uppercase;
   padding: 12px;
@@ -30530,7 +30531,7 @@ p {
 }
 
 .btn-dark,
-#contactModal #gform_submit_button_2 {
+#contactModal #gform_submit_button_2, #gform_submit_button_3 {
   background: rgb(0, 49, 60);
   color: rgb(255, 255, 255);
   border: rgb(0, 49, 60) 1px solid;
@@ -34974,6 +34975,17 @@ a.btn-alp {
   background-color: #F8FAFF;
   display: inline-block;
   min-width: 200px;
+}
+
+/*resources*/
+#gf_3 .modal-body .gform_wrapper .gform_body {
+  width: 600px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 
 /*# sourceMappingURL=theme.css.map */

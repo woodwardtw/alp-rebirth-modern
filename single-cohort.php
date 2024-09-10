@@ -65,7 +65,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 </div>
 <!--CONTACT Modal -->
 <div class="modal fade" id="resourceModal" tabindex="-1" role="dialog" aria-labelledby="the-greeting" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-fullscreen" role="document">
     <div class="modal-content">
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       <div class="modal-header">

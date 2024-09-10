@@ -2924,7 +2924,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
-.btn-dark {
+.btn-dark{
   color: rgb(255, 255, 255);
   background-color: #343a40;
   border-color: #343a40;
@@ -12717,7 +12717,8 @@ p {
 
 .btn-alp,
 #gform_submit_button_1,
-#gform_submit_button_2 {
+#gform_submit_button_2,
+#gform_submit_button_3 {
   border-radius: 68px;
   text-transform: uppercase;
   padding: 12px;
@@ -12741,7 +12742,7 @@ p {
 }
 
 .btn-dark,
-#contactModal #gform_submit_button_2 {
+#contactModal #gform_submit_button_2, #gform_submit_button_3 {
   background: rgb(0, 49, 60);
   color: rgb(255, 255, 255);
   border: rgb(0, 49, 60) 1px solid;
@@ -17185,4 +17186,16 @@ a.btn-alp{
   background-color: $light-blue;
   display: inline-block;
   min-width: 200px;
+}
+
+/*resources*/
+
+#gf_3 .modal-body .gform_wrapper .gform_body {
+  width: 600px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
