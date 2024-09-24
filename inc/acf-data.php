@@ -395,6 +395,8 @@ acf_add_local_field_group(array(
 						'LinkedIn' => 'LinkedIn',
 						'Pocket' => 'Pocket',
 						'Twitter' => 'Twitter',
+						'Instagram' => 'Instagram',
+						'Facebook' => 'Facebook'
 					),
 					'default_value' => array(
 					),
