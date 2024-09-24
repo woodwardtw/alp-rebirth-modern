@@ -1577,7 +1577,8 @@ function get_sub_services_agg($cat_name){
   foreach ( $term_children as $child ) {
      $term = get_term_by( 'id', $child, $taxonomy_name );
      $id = sanitize_title($term->name);
-     $html .= '<li><a href="'. $cat_name .'#'.$id.'">' . $term->name . '</a></li>';
+     $sanitize_name = sanitize_title($cat_name);
+     $html .= '<li><a href="'. $sanitize_name .'#'.$id.'">' . $term->name . '</a></li>';
   }
   return $html;
 }
