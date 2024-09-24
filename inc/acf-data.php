@@ -68,9 +68,9 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5b396ee912679',
-			'label' => 'Years of Experience',
+			'label' => 'Years of Experience or Start Year',
 			'name' => 'experience',
-			'type' => 'select',
+			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
