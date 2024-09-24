@@ -32558,6 +32558,16 @@ a.team-read-more {
   min-height: 480px;
 }
 
+.jumbotron.additional-learning-solutions {
+  background-image: url(../imgs/Alternate_Medallion.png);
+  background-position: bottom center;
+  background-color: #f4364c;
+  background-size: 650px 238px;
+  height: 600px;
+  color: #fff;
+  background-repeat: no-repeat;
+}
+
 .services-title {
   font-family: "Sentinel-Semibold", sans-serif;
   font-size: 64px;
