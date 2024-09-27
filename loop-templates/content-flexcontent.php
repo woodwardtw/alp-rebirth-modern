@@ -207,11 +207,23 @@
                 }
         $slug = sanitize_title( $title);
             echo "<div class='row topic-row full-width-row'>
-                    <div class='col-md-10 offset-md-1'>
+                    <div class='col-md-10'>
                         <h2 class='lead trio-header' id='{$slug}'>{$title}</h2>
                     </div>
                         ";
-         
+            $col = 10; 
+            $offset = '';                       
+            if(get_sub_field('narrative')){
+                $narrative = get_sub_field('narrative');
+                $col = 5;
+                $offset = 'offset-md-1';
+                echo "
+                    <div class='col-md-6'>
+                        {$narrative}
+                    </div>
+                ";
+            }
+            
             $cats = get_sub_field('category');
             $tags = get_sub_field('tags');
             $type = get_sub_field('post_type');
@@ -228,6 +240,7 @@
 
             // The Loop
             if ( $the_query->have_posts($attribution = NULL) ) :
+                echo "<div class='col-md-{$col} {$offset}'>";
                 while ( $the_query->have_posts() ) : $the_query->the_post();
                 // Do Stuff
                 $post_id = get_the_ID();
@@ -245,7 +258,7 @@
                 }                
                
                 echo "
-                    <div class='col-md-10 offset-md-1 posts-loop'>
+                    <div class='posts-loop'>
                         <div class='post-block'>
                             <a class='post-link stretched-link' href='{$url}'>
                                 <h3 class='accordion-title'>{$title}</h3>                           
@@ -260,7 +273,7 @@
             endif;            
             // Reset Post Data
             wp_reset_postdata();
-            echo "</div>";
+            echo "</div></div>";
         ?>        
         <?php endif;?>
         <!--challenge loop-->

@@ -559,6 +559,28 @@
                             "bidirectional_target": []
                         },
                         {
+                            "key": "field_66f708c7cc54b",
+                            "label": "Narrative",
+                            "name": "narrative",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Optional and will show up to the left of the resources.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
                             "key": "field_64f5f8abb990d",
                             "label": "Post type",
                             "name": "post_type",
@@ -864,5 +886,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1725818300
+    "modified": 1727465728
 }

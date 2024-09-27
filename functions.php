@@ -2554,6 +2554,10 @@ function alp_topic_menu(){
         $title = get_sub_field('title');
         alp_topic_menu_title($title);
       }
+        if( get_row_layout() == 'two_column'){
+        $title = get_sub_field('title');
+        alp_topic_menu_title($title);
+      }
   
      endwhile;
   echo "</ul></div>";
