@@ -283,7 +283,6 @@
                     <?php echo $right;?>                    
                 </div>
             </div>
-        </div>
         <?php endif;?>
     <?php endwhile; ?>
 <?php endif; ?>
