@@ -189,7 +189,7 @@ function addContactMobile(){
       ul.appendChild(li);  
       li.setAttribute('id', 'contact-us-mobile');
       li.setAttribute('class', 'menu-item');
-      li.innerHTML = '<a href="#contactModal" data-toggle="modal" data-target="#contactModal">Work with us<i class="arrow-right"></i></a>';
+      li.innerHTML = '<a href="#contactModal" data-bs-toggle="modal" data-bs-target="#contactModal">Work with us<i class="arrow-right"></i></a>';
     }
 
 }

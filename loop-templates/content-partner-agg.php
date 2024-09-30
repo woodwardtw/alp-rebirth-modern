@@ -44,7 +44,7 @@
 				<div class="col-md-8 district-contact">
 					<h2><?php echo acf_fetch_partner_agg_button_area_title();?></h2>
 					<p><?php echo acf_fetch_partner_agg_button_area_statement();?></p>
-					<button class="btn btn-alp btn-dark" type="button" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+					<button class="btn btn-alp btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
 				</div>
 			</div>
 		</div>

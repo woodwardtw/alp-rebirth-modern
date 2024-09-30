@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<!-- Your site branding in the menu -->
 		<?php //get_template_part( 'global-templates/navbar-branding' ); ?>
 		<div class="corner">
-							<!--<button type="button" id="btn-contact" class="btn" data-toggle="modal" data-target="#contactModal">Work with us<i class="arrow-right"></i></button>-->
+							<!--<button type="button" id="btn-contact" class="btn" data-bs-toggle="modal" data-bs-target="#contactModal">Work with us<i class="arrow-right"></i></button>-->
 							<?php get_search_form(); ?>
 						</div>	
 

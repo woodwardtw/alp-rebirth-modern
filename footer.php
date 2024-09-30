@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!--corner for mobile-->
 <div class="bottom-corner">
-	<button type="button" id="btn-contact" class="btn" data-toggle="modal" data-target="#contactModal">Work with us<i class="arrow-right"></i></button>
+	<button type="button" id="btn-contact" class="btn" data-bs-toggle="modal" data-bs-target="#contactModal">Work with us<i class="arrow-right"></i></button>
 </div>	
 
 <!-- Contact Modal -->
@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
     	<button type="button" class="close" data-dismiss="modal" id="closer" aria-label="Close">
-          <span aria-hidden="true">Close <span class="close-x">X</span></span>
+          <span aria-hidden="true" data-bs-dismiss="modal">Close <span class="close-x">X</span></span>
         </button>
       <div class="modal-header">
         <h2 class="modal-title" id="contactModalLabel">Work with us</h2>        
