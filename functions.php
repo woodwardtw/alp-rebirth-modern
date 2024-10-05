@@ -1297,6 +1297,9 @@ function special_service_shield($slug,$size){
    if($slug === 'cross-district-networking'){
     return 'inspire/ALP_Badge_CrossPartnerNetworking'.$size.'.png';
   }
+  if($slug === 'generative-ai-executive-consulting'){
+    return 'inspire/ALP_Badge_LeadershipCons'.$size.'.png';
+  }
   //INSPIRE
   if($slug === 'cybersecurity-program'){
     return 'als/SolutionsBadge_CyberSec@4x.png';
