@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
       	</div>
       </div>
       <div class="modal-body">
-       <?php echo do_shortcode('[gravityform id="2" title="false" description="false"]');?>
+       <?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]');?>
 			<div class="modal-bottom">
 				<h3>Other ways we can connect</h3>
 				<p>&nbsp;</p>
