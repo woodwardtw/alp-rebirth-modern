@@ -59,7 +59,7 @@ function alp_scripts() {
   wp_enqueue_style ( 'cloud_fonts', add_query_arg( $query_args, "https://cloud.typography.com/7739656/6620392/css/fonts.css" ), array(), null );
 
   wp_enqueue_script( 'alp_js', get_template_directory_uri() . '/js/alp.js', array(), '1.1.1', true );
-    }
+  }
 
 
 //add footer widget areas
