@@ -9,7 +9,14 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="entry-content stories-agg">
-		<a href="../podcasts" class="btn btn-alp btn-dark">Our Podcasts</a>
+		<div class="row">
+			<div class="col-md-6">
+				<a href="../podcasts" class="btn btn-alp btn-dark">Our Podcasts</a>
+			</div>
+			<div class="col-md-6">
+				<a href="../signup-for-our-monthly-newsletter" class="btn btn-alp btn-dark">Our Newsletter</a>
+			</div>
+		</div>
 		<div class="col-md-12">
 
 			<div class="row stories-three row-eq-height">
