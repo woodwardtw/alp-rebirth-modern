@@ -34970,10 +34970,12 @@ a.btn-alp {
 .posts-loop .post-link h3, .posts-loop .post-link .h3 {
   padding-top: 20px;
   padding-left: 0.4em;
+  font-size: 1.5rem;
 }
 
 .posts-loop a.post-link p {
   padding: 0.3em 0.4em;
+  margin-left: 10px;
 }
 
 .accordion-button {
@@ -34991,6 +34993,7 @@ a.btn-alp {
   background-color: #F8FAFF;
   display: inline-block;
   min-width: 200px;
+  margin-left: 10px;
 }
 
 /*resources*/
