@@ -260,11 +260,10 @@
                 echo "
                     <div class='posts-loop'>
                         <div class='post-block'>
-                            <a class='post-link stretched-link' href='{$url}'>
+                            <a class='post-link' href='{$url}'>
                                 <h3 class='accordion-title'>{$title}</h3>                           
                                 {$attribution}
-                                <p>{$excerpt}</p>
-                                
+                                <p>{$excerpt}</p>                                
                              </a>
                         </div>
                     </div>

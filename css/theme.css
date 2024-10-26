@@ -34937,7 +34937,7 @@ a.btn-alp {
   color: rgb(0, 49, 60);
 }
 
-.topic-list a:hover, .resource-links a:hover, .sub-topic-list a:hover, a.post-link:hover {
+.topic-list a:hover, .resource-links a:hover, .sub-topic-list a:hover {
   transform: translateX(10px);
   padding-left: 10px;
   background-size: 100% 100%;

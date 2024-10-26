@@ -17134,7 +17134,7 @@ a.btn-alp{
   display: inline-block;
 }
 
-.topic-list a, .resource-links a, .sub-topic-list a, a.post-link {
+.topic-list a, .resource-links a, .sub-topic-list a, a.post-link{
   height: auto;
   display: block;
   transition: all .3s ease;
@@ -17148,11 +17148,12 @@ a.btn-alp{
 }
 
 
-.topic-list a:hover, .resource-links a:hover, .sub-topic-list a:hover, a.post-link:hover{
+.topic-list a:hover, .resource-links a:hover, .sub-topic-list a:hover{
       transform: translateX(+10px);
       padding-left: 10px;
       background-size: 100% 100%;
 }
+
 
 .resource-source {
   font-size: .8rem;
