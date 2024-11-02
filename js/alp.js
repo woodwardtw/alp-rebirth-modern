@@ -77,9 +77,9 @@ window.setTimeout(offsetAnchor, 0);
 }());
 
 //turn on tooltips
-jQuery(function () {
-  jQuery('[data-toggle="tooltip"]').tooltip();
-})
+// jQuery(function () {
+//   jQuery('[data-toggle="tooltip"]').tooltip();
+// })
 
 
 //trio svg animations
