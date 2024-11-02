@@ -32277,6 +32277,13 @@ h3.partner-post-title, .partner-post-title.h3 {
   text-align: center;
 }
 
+.team-contact h2, .team-contact .h2 {
+  font-family: Sentinel-Semibold, sans-serif;
+  font-size: 44px;
+  color: #00313c;
+  text-align: center;
+}
+
 .team-bio-single {
   border-radius: 50%;
   -o-object-fit: cover;
