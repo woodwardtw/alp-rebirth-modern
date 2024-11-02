@@ -33386,6 +33386,15 @@ a.facetwp-page {
   font-weight: 100;
 }
 
+.footer-contact {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 175, 215);
+  border: none;
+  padding: 0;
+  font-weight: 100;
+  line-height: 1.4em;
+}
+
 .address {
   font-weight: 100;
   padding-right: 4em;

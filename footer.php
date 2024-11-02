@@ -81,7 +81,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<span class="footer-phone">T: (919) 308-2636</span><br> 
 									<!--<span class="footer-fax">F: (919) 747-4200</span>--> 
 									<a href="mailto:info@alplearn.com">info@alplearn.com</a><br>
-									<a href="#">Contact us</a>
+									<button class="footer-contact" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
 								</div>
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Mid Left") ) : ?><?php endif;?>
 							</div>
