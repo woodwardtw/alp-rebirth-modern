@@ -33363,6 +33363,10 @@ a.facetwp-page {
   margin-bottom: 80px;
 }
 
+.footer-widget li a {
+  line-height: 1.5rem;
+}
+
 .footer-widget h2, .footer-widget .h2 {
   font-size: 1em;
 }
