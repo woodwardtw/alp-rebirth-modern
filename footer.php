@@ -68,7 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="footer-widget col-md-4 col-sm-12">
 								<div class="footer-brand">
 									<img src="<?php echo get_template_directory_uri();?>/imgs/alp_footer_logo.svg"><br>
-									© 2018 Advanced Learning Partnerships LLC
+									© <?php echo date("Y");?> Advanced Learning Partnerships LLC
 								</div>
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Far Left") ) : ?><?php endif;?>
 							</div>
@@ -78,9 +78,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 									PO Box 17254, Chapel Hill, NC 27516
 								</div>
 								<div class="footer-numbers">
-									<span class="footer-phone">T: (919) 308-2636</span> 
+									<span class="footer-phone">T: (919) 308-2636</span><br> 
 									<!--<span class="footer-fax">F: (919) 747-4200</span>--> 
-									<a href="mailto:info@advancedpartnerships.com">info@advancedpartnerships.com</a>
+									<a href="mailto:info@alplearn.com">info@alplearn.com</a><br>
+									<a href="#">Contact us</a>
 								</div>
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Mid Left") ) : ?><?php endif;?>
 							</div>
@@ -89,7 +90,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Mid Right") ) : ?><?php endif;?>
 							</div>
 							<div class="footer-widget col-md-2 col-6 follow">
-								<h2>Follow Us</h2>
+								<h2>Learn With Us</h2>
 								<?php wp_nav_menu( array( 'theme_location' => 'footer-far-right-menu' ) ); ?>											
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Far Right") ) : ?><?php endif;?>							
 							</div>	

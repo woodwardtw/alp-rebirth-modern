@@ -28,19 +28,19 @@ $container   = get_theme_mod( 'understrap_container_type' );
 											
 					<?php endwhile; // end of the loop. ?>
 								
-								</div>
+						<!-- 		</div>
 							</div>
-						</div> 
+						</div>  -->
 					<!--end tweets-->
-						<div class="row message-row">    
+				<!-- 		<div class="row message-row">    
 							 <div class="col-md-12 alp-sub-message">
 							 	<h2>ALP is active across North America</h2>
 							 	<div class="home-details">ALP is a partner, designer, and agent of change. We move beyond the expert mindset and one-size-fits-all, quick fix solutions.</div>
 								<div class="home-map">
-							 		<?php echo do_shortcode('[mapit person="any"]');?>
+							 		<?php //echo do_shortcode('[mapit person="any"]');?>
 							 	</div>
 							 </div>							
-	 					</div>
+	 					</div> -->
 
 	 				</div>
 					

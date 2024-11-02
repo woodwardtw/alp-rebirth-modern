@@ -296,5 +296,75 @@
                 </div>
             </div>
         <?php endif;?>
+         <!--Resources-->
+        <?php if( get_row_layout() == 'resources' ):
+                $title = 'Learn more';
+                if(get_sub_field('title')){
+                     $title = get_sub_field('title');
+                }
+        $slug = sanitize_title( $title);
+            echo "<div class='row topic-row full-width-row'>
+                    <div class='col-md-10'>
+                        <h2 class='lead trio-header' id='{$slug}'>{$title}</h2>
+                    </div>
+                        ";
+            $col = 10; 
+            $offset = '';                       
+            if(get_sub_field('narrative')){
+                $narrative = get_sub_field('narrative');
+                $col = 5;
+                $offset = 'offset-md-1';
+                echo "
+                    <div class='col-md-6'>
+                        {$narrative}
+                    </div>
+                ";
+            }
+            
+            $post_ids = get_sub_field('resources');
+            $args = array(
+                'post_type' => 'resource',
+              'post__in' => $post_ids
+            );
+            $the_query = new WP_Query( $args );
+            $count = $the_query->found_posts;
+            // The Loop
+            if ( $the_query->have_posts($attribution = NULL) ) :
+                echo "<div class='col-md-{$col} {$offset}'>";
+                    while ( $the_query->have_posts() ) : $the_query->the_post();
+                    // Do Stuff
+                    $post_id = get_the_ID();
+
+                    $title = get_the_title();
+                    $url = get_the_permalink();
+                    if(get_field('resource_url', $post_id)){
+                        $url = get_field('resource_url', $post_id);
+                    }
+                     if(get_field('creator', $post_id)){
+                        $attribution = "<div class='attribution'>Created by: ".get_field('creator', $post_id)."</div>";
+                    }
+
+                    if(get_the_content()){
+                         $excerpt = wp_trim_words(get_the_content(), 30);
+                    }                
+                   
+                    echo "
+                        <div class='posts-loop'>
+                            <div class='post-block'>
+                                <a class='post-link' href='{$url}'>
+                                    <h3 class='accordion-title'>{$title}</h3>                           
+                                    {$attribution}
+                                    <p>{$excerpt}</p>                                
+                                 </a>
+                            </div>
+                        </div>
+                    ";
+                endwhile;
+            endif;            
+            // Reset Post Data
+            wp_reset_postdata();
+            echo "</div></div>";
+        ?>        
+        <?php endif;?>
     <?php endwhile; ?>
 <?php endif; ?>

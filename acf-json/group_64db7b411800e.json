@@ -532,6 +532,28 @@
                             "append": ""
                         },
                         {
+                            "key": "field_66f708c7cc54b",
+                            "label": "Narrative",
+                            "name": "narrative",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Optional and will show up to the left of the resources.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
                             "key": "field_64f0d1088003b",
                             "label": "Category",
                             "name": "category",
@@ -557,28 +579,6 @@
                             "multiple": 0,
                             "allow_null": 0,
                             "bidirectional_target": []
-                        },
-                        {
-                            "key": "field_66f708c7cc54b",
-                            "label": "Narrative",
-                            "name": "narrative",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "Optional and will show up to the left of the resources.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "relevanssi_exclude": 0,
-                            "default_value": "",
-                            "allow_in_bindings": 0,
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
                         },
                         {
                             "key": "field_64f5f8abb990d",
@@ -662,16 +662,16 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_6525a51ebf16e": {
-                    "key": "layout_6525a51ebf16e",
-                    "name": "challenge",
-                    "label": "Challenge",
+                "layout_672510cd593fc": {
+                    "key": "layout_672510cd593fc",
+                    "name": "resources",
+                    "label": "Resources",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_6525a526bf171",
-                            "label": "Challenge Title",
-                            "name": "challenge_title",
+                            "key": "field_672510cd593ff",
+                            "label": "Title",
+                            "name": "title",
                             "aria-label": "",
                             "type": "text",
                             "instructions": "",
@@ -682,18 +682,42 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "relevanssi_exclude": 0,
                             "default_value": "",
                             "maxlength": "",
+                            "allow_in_bindings": 1,
                             "placeholder": "",
                             "prepend": "",
                             "append": ""
                         },
                         {
-                            "key": "field_6525a530bf172",
-                            "label": "Challenge Description",
-                            "name": "challenge_description",
+                            "key": "field_672510cd59400",
+                            "label": "Narrative",
+                            "name": "narrative",
                             "aria-label": "",
                             "type": "wysiwyg",
+                            "instructions": "Optional and will show up to the left of the resources.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_672510ec59405",
+                            "label": "Resources",
+                            "name": "resources",
+                            "aria-label": "",
+                            "type": "post_object",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -702,75 +726,21 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
-                        },
-                        {
-                            "key": "field_6525a548bf173",
-                            "label": "Form ID",
-                            "name": "form_id",
-                            "aria-label": "",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "0": "",
-                                "3": "Base Challenge Form",
-                                "6": "Bulk event registration",
-                                "9": "Catalog Course Request",
-                                "10": "Catalog Refund Request",
-                                "2": "Challenge one",
-                                "8": "Contact DLINQ (1)",
-                                "4": "poetry submission form",
-                                "1": "Request form",
-                                "5": "Reservation form",
-                                "12": "test modal conditional",
-                                "7": "Workshop request",
-                                "14": "zz top",
-                                "15": "zzz",
-                                "13": "zzzz"
-                            },
-                            "default_value": false,
-                            "return_format": "value",
-                            "multiple": 0,
+                            "relevanssi_exclude": 0,
+                            "post_type": [
+                                "resource"
+                            ],
+                            "post_status": [
+                                "publish"
+                            ],
+                            "taxonomy": "",
+                            "return_format": "id",
+                            "multiple": 1,
                             "allow_null": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_6525a56ebf174",
-                            "label": "Show submissions",
-                            "name": "show_submissions",
-                            "aria-label": "",
-                            "type": "radio",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "yes": "Yes",
-                                "no": "No"
-                            },
-                            "default_value": "",
-                            "return_format": "value",
-                            "allow_null": 0,
-                            "other_choice": 0,
-                            "layout": "vertical",
-                            "save_other_choice": 0
+                            "allow_in_bindings": 0,
+                            "bidirectional": 0,
+                            "ui": 1,
+                            "bidirectional_target": []
                         }
                     ],
                     "min": "",
@@ -886,5 +856,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727465728
+    "modified": 1730482966
 }

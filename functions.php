@@ -2530,7 +2530,7 @@ function alp_remove_www($string){
 function alp_topic_menu(){
   if ( have_rows('content') ) {
     echo "<div class='menu-block'>
-    <h2 class='trio-header'>Menu</h2>
+    <h2 class='trio-header'>Resources</h2>
     <ul class='sub-topic-list'>";
      while( have_rows('content') ) : the_row(); 
       if( get_row_layout() == 'sub_topic'){
