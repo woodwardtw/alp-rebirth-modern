@@ -1416,7 +1416,7 @@ function get_leadership_bios(){
           $html .= "<div class='col-md-4 team-square leadership'>                                              
                         <a href='{$link}'><div class='card'>
                           <div class='card-body leadership'>
-                            <img src='{$img}' class='img-fluid team-bio-single'>
+                            <img loading='lazy' src='{$img}' class='img-fluid team-bio-single'>
                             <div class='hover-faculty-view'>View Profile <i class='arrow-right'></i></div>
                               <h3 class='team-title'>
                                 {$title}                     
@@ -1463,7 +1463,7 @@ function get_faculty_bios($cat){
                       $html .= '<div class="col-md-'.$col.' team-square ' . $level .'">';                                              
                       $html .= '<a href="'.get_the_permalink().'"><div class="card"><div class="card-body '.$cat.'">';
                         if ( get_the_bio_img('medium') ) {
-                        $html .=  '<img src="' . get_the_bio_img('faculty') . '" class="img-fluid team-bio-single">';
+                        $html .=  '<img loading="lazy" src="' . get_the_bio_img('faculty') . '" class="img-fluid team-bio-single">';
                         $html .= '<div class="hover-faculty-view">View Profile'.$br.'<i class="arrow-right"></i></div>';
                         }  
                        $html .= '<h3 class="team-title">';
