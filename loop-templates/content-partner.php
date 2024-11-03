@@ -85,8 +85,8 @@
 		<div class="container">	
 			<div class="row align-items-center">
 				<div class="col-md-8 district-contact">
-					<h2><?php echo acf_fetch_partner_button_header();?></h2>
-					<p><?php echo acf_fetch_partner_button_description();?></p>
+					<h2 class="services-button-title button-area-title"><?php echo acf_fetch_partner_button_header() ?></h2>
+					<div class="services-button-statement button-area-statement"><?php echo acf_fetch_partner_button_description() ?></div>					
 					<button class="btn btn-alp btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
 				</div>
 			</div>

@@ -470,7 +470,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5b722bcfbbfb6',
-			'label' => 'Contact Details',
+			'label' => 'Contact Description',
 			'name' => 'footer_details',
 			'type' => 'text',
 			'instructions' => '',
