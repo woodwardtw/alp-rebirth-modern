@@ -1301,7 +1301,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5b78d3ba70014',
-			'label' => 'Button Header',
+			'label' => 'Contact Title',
 			'name' => 'button_header',
 			'type' => 'text',
 			'instructions' => '',
@@ -1320,7 +1320,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5b78d3cce668f',
-			'label' => 'Button Description',
+			'label' => 'Contact Description',
 			'name' => 'button_description',
 			'type' => 'text',
 			'instructions' => '',
