@@ -165,8 +165,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- Wrapper end -->
 <div class="medium-blue contact-button-area">
 	<div class="container">
-		<h2 class="services-button-title button-area-title"><?php echo acf_fetch_services_button_area_title() ?></h2>
-		<div class="services-button-statement button-area-statement"><?php echo acf_fetch_services_button_area_statement() ?></div>
+		<h2 class="services-button-title button-area-title"><?php echo acf_fetch_contact_title() ?></h2>
+		<div class="services-button-statement button-area-statement"><?php echo acf_fetch_contact_statement() ?></div>
 		  <button type="button" class="btn-alp btn-dark btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
 	</div>
 </div>
