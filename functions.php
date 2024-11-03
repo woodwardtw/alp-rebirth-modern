@@ -751,7 +751,6 @@ function acf_fetch_services_button_area_title(){
       $html = $services_button_area_title;  
      return $html;    
     }
-
 }
 
 
@@ -764,9 +763,29 @@ function acf_fetch_services_button_area_statement(){
       $html = $services_button_area_statement;  
      return $html;    
     }
-
 }
 
+function acf_fetch_contact_title(){
+  global $post;
+  $html = '';
+  $services_button_area_title = get_field('footer_heading');
+    if( $services_button_area_title) {      
+      $html = $services_button_area_title;  
+     return $html;    
+    }
+}
+
+
+function acf_fetch_contact_statement(){
+  global $post;
+  $html = '';
+  $services_button_area_statement = get_field('footer_details');
+
+    if( $services_button_area_statement) {      
+      $html = $services_button_area_statement;  
+     return $html;    
+    }
+}
 
 
 

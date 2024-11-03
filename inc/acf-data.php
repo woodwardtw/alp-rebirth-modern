@@ -451,7 +451,7 @@ acf_add_local_field_group(array(
 	'fields' => array(
 		array(
 			'key' => 'field_5b722bc3b718e',
-			'label' => 'Footer Heading',
+			'label' => 'Contact Heading',
 			'name' => 'footer_heading',
 			'type' => 'text',
 			'instructions' => '',
@@ -470,7 +470,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5b722bcfbbfb6',
-			'label' => 'Footer Details',
+			'label' => 'Contact Details',
 			'name' => 'footer_details',
 			'type' => 'text',
 			'instructions' => '',
@@ -508,6 +508,20 @@ acf_add_local_field_group(array(
 				'param' => 'page_template',
 				'operator' => '==',
 				'value' => 'page-templates/fullwidthpage-services.php',
+			),
+		),
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'page',
+			),
+		),
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'cohort',
 			),
 		),
 	),

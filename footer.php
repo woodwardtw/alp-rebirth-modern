@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   </div>
 </div>
 
-<div class="row backup-row footer-<?php echo $post->post_name;?> footer-<?php echo $post->post_type;?>">	
+<div class="row backup-row medium-blue footer-<?php echo $post->post_name;?> footer-<?php echo $post->post_type;?>">	
 	<div class="back-to-top col-md-10">		
 			<hr>
  		<a href="#content" class="btn btn-alp btn-dark btn-footer"><i class="fa fa-arrow-up"></i>Back to Top</a>
