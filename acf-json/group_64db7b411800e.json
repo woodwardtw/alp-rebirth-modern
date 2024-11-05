@@ -734,7 +734,7 @@
                                 "publish"
                             ],
                             "taxonomy": "",
-                            "return_format": "id",
+                            "return_format": "object",
                             "multiple": 1,
                             "allow_null": 0,
                             "allow_in_bindings": 0,
@@ -856,5 +856,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730482966
+    "modified": 1730843724
 }

@@ -321,22 +321,27 @@
                 ";
             }
             
-            $post_ids = get_sub_field('resources');
-            $args = array(
-                'post_type' => 'resource',
-              'post__in' => $post_ids
-            );
-            $the_query = new WP_Query( $args );
-            $count = $the_query->found_posts;
-            // The Loop
-            if ( $the_query->have_posts($attribution = NULL) ) :
-                echo "<div class='col-md-{$col} {$offset}'>";
-                    while ( $the_query->have_posts() ) : $the_query->the_post();
+            $posts = get_sub_field('resources');
+            //var_dump($posts);
+            // $args = array(
+            //   'post_type' => 'resource',
+            //   'post__in' => $post_ids
+            // );
+            // $the_query = new WP_Query( $args );
+            // $count = $the_query->found_posts;
+            // // The Loop
+            // if ( $the_query->have_posts($attribution = NULL) ) :
+            echo "<div class='col-md-{$col} {$offset}'>";
+            foreach ($posts as $key => $post) {
+                // code...
+           
+                
+                    //while ( $the_query->have_posts() ) : $the_query->the_post();
                     // Do Stuff
                     $post_id = get_the_ID();
 
-                    $title = get_the_title();
-                    $url = get_the_permalink();
+                    $title = $post->post_title;
+                    $url = get_the_permalink($post_id);
                     if(get_field('resource_url', $post_id)){
                         $url = get_field('resource_url', $post_id);
                     }
@@ -359,8 +364,8 @@
                             </div>
                         </div>
                     ";
-                endwhile;
-            endif;            
+                //endwhile;
+                }
             // Reset Post Data
             wp_reset_postdata();
             echo "</div></div>";
