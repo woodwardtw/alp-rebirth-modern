@@ -322,21 +322,13 @@
             }
             
             $posts = get_sub_field('resources');
-            //var_dump($posts);
-            // $args = array(
-            //   'post_type' => 'resource',
-            //   'post__in' => $post_ids
-            // );
-            // $the_query = new WP_Query( $args );
-            // $count = $the_query->found_posts;
-            // // The Loop
-            // if ( $the_query->have_posts($attribution = NULL) ) :
+          
             echo "<div class='col-md-{$col} {$offset}'>";
+            $html = '';
             foreach ($posts as $key => $post) {
                 // code...
            
                 
-                    //while ( $the_query->have_posts() ) : $the_query->the_post();
                     // Do Stuff
                     $post_id = get_the_ID();
 
@@ -353,7 +345,7 @@
                          $excerpt = wp_trim_words(get_the_content(), 30);
                     }                
                    
-                    echo "
+                    $html = $html . "
                         <div class='posts-loop'>
                             <div class='post-block'>
                                 <a class='post-link' href='{$url}'>
