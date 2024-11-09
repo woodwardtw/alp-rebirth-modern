@@ -1998,7 +1998,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5b63404214abd',
-			'label' => 'Single Service Button Area Title',
+			'label' => 'Contact Button  Title',
 			'name' => 'single_service_button_area_title',
 			'type' => 'text',
 			'instructions' => '',
@@ -2017,7 +2017,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5b63405014abe',
-			'label' => 'Single Service Button Area Statement',
+			'label' => 'Contact Statement',
 			'name' => 'single_service_button_area_statement',
 			'type' => 'textarea',
 			'instructions' => '',
