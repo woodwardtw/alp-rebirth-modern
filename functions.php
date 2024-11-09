@@ -746,7 +746,7 @@ function acf_fetch_partner_statement(){
 function acf_fetch_services_button_area_title(){
   global $post;
   $html = '';
-  $services_button_area_title = get_field('services_button_area_title');
+  $services_button_area_title = get_field('single_service_button_area_title',$post->ID);
     if( $services_button_area_title) {      
       $html = $services_button_area_title;  
      return $html;    
@@ -757,8 +757,7 @@ function acf_fetch_services_button_area_title(){
 function acf_fetch_services_button_area_statement(){
   global $post;
   $html = '';
-  $services_button_area_statement = get_field('services_button_area_statement');
-
+  $services_button_area_statement = get_field('single_service_button_area_statement',$post->ID);
     if( $services_button_area_statement) {      
       $html = $services_button_area_statement;  
      return $html;    
