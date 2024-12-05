@@ -331,7 +331,6 @@
                 
                     // Do Stuff
                     $post_id = get_the_ID();
-
                     $title = $post->post_title;
                     $url = get_the_permalink($post_id);
                     if(get_field('resource_url', $post_id)){
@@ -360,7 +359,7 @@
                 }
             // Reset Post Data
             wp_reset_postdata();
-            echo "</div></div>";
+            echo $html . "</div></div>";
         ?>        
         <?php endif;?>
     <?php endwhile; ?>
