@@ -35030,6 +35030,10 @@ a.btn-alp {
   margin-top: 6em;
 }
 
+.btn:hover, .wpcf7 input[type=submit]:hover, .woocommerce-notices-wrapper .woocommerce-message a.button:hover, .woocommerce-info a.button:hover {
+  cursor: pointer;
+}
+
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
 #mc_embed_signup form {
   display: block;

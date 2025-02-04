@@ -17246,6 +17246,10 @@ a.btn-alp{
   margin-top: 6em;
 }
 
+.btn:hover {
+  cursor:pointer;
+}
+
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
 #mc_embed_signup form {display:block; position:relative; text-align:left; margin: 20px}
 #mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
