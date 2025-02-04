@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <!--corner for mobile-->
 <div class="bottom-corner">
-	<button type="button" id="btn-contact" class="btn" data-bs-toggle="modal" data-bs-target="#contactModal">Work with us<i class="arrow-right"></i></button>
+	<button class="btn btn-alp btn-dark btn-fixed" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
 </div>	
 
 <!-- Contact Modal -->
@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h3>Other ways we can connect</h3>
 				<p>&nbsp;</p>
 				<div class="modal-social">
-					<a href="https://twitter.com/alplearn"><div class="modal-twitter"></div>Follow on twitter</a> 
+					<a href="https://www.linkedin.com/company/advanced-learning-partnerships-inc"><div class="modal-linkedin"></div>Follow us on LinkedIn</a> 
 				<!-- 					<a href="https://www.linkedin.com/company/advanced-learning-partnerships-inc/"><div class="modal-linkedin"></div>connect on linkedin</a>
 				 -->				
 				</div>	

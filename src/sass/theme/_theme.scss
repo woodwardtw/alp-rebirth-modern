@@ -16307,8 +16307,11 @@ select {
   display: block;
 }
 
-.bottom-corner {
-  display: none;
+.btn-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 200px;
 }
 
 /*
