@@ -3,6 +3,28 @@
     "title": "Flex content",
     "fields": [
         {
+            "key": "field_67abab609e111",
+            "label": "Menu Title",
+            "name": "menu_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This controls the title above the internal page index. It will default to Resources.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "relevanssi_exclude": 0,
+            "default_value": "Resources",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_64db7b41dba7f",
             "label": "Topic Summary",
             "name": "topic_summary",
@@ -856,5 +878,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730843724
+    "modified": 1739303842
 }
