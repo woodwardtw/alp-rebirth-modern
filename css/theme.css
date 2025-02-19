@@ -35034,6 +35034,19 @@ a.btn-alp {
   cursor: pointer;
 }
 
+/*team linkedin revision*/
+.team-linked {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 10px;
+  top: 10px;
+  background-image: url(../imgs/icon-linkedin.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
 #mc_embed_signup form {
   display: block;

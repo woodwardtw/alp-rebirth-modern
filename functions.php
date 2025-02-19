@@ -1431,8 +1431,19 @@ function get_leadership_bios(){
           $title = get_the_title($post_id);
           $job_title = get_the_alp_title($post_id);
           $perma_link = get_the_permalink($post_id);
+          $linked_in = story_linked_account($post_id); 
+          if($linked_in != NULL){
+            $linked_in_html = "
+                  <a href='{$linked_in}' class='team-linked' alt='LinkedIn icon for {$title}.'></a>
+            ";
+          }  else {
+             $linked_in_html = "";
+          }       
+          
           $html .= "<div class='col-md-4 team-square leadership'>                                              
-                        <a href='{$link}'><div class='card'>
+                      <div class='card'> 
+                      {$linked_in_html}                   
+                        <a href='{$link}'>  
                           <div class='card-body leadership'>
                             <img loading='lazy' src='{$img}' class='img-fluid team-bio-single'>
                             <div class='hover-faculty-view'>View Profile <i class='arrow-right'></i></div>
