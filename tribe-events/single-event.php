@@ -73,10 +73,15 @@ $event_id = get_the_ID();
 				<div class="tribe-registration">
 					<?php echo alp_event_registration();?>
 				</div>
-				<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
+				<?php if(!tribe_is_past_event()): ?>
+					<!-- hide add to calendar for past events -->
+					<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
+
+				<?php endif; ?>
 				<!-- Event meta -->
 				<?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
+				
 				<?php //tribe_get_template_part( 'modules/meta' ); ?>
 
 			</div>
