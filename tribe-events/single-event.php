@@ -59,10 +59,10 @@ $event_id = get_the_ID();
 				<?php 
 						echo alp_event_video();
 					?>
-			<div class="col-md-5">
-				<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
+			<div class="col-md-12">
+				<?php echo tribe_event_featured_image( $event_id, 'full mx-auto fluid', false ); ?>
 			</div>
-			<div class="col-md-7">
+			<div class="col-md-12">
 
 				<!-- Event content -->
 				<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
