@@ -37,7 +37,9 @@ $container = get_theme_mod( 'understrap_container_type' );
       	</div>
       </div>
       <div class="modal-body">
-       <?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]');?>
+       <?php //echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]');?>
+	   ﻿<script src="https://js.hsforms.net/forms/embed/49604150.js" defer></script>
+		<div class="hs-form-frame" data-region="na1" data-form-id="b84bdba5-f028-43c8-9be1-75fd072e896c" data-portal-id="49604150"></div>
 			<div class="modal-bottom">
 				<h3>Other ways we can connect</h3>
 				<p>&nbsp;</p>
