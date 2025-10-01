@@ -46,8 +46,8 @@
 				<?php echo story_social_links(get_the_author_meta('display_name'));?>
 			</div>
 			<div class="col-md-8 offset-md-2 story-meta soc-share-box">
-				<h3>Share this story</h3>
-				<?php echo story_social_sharing_buttons($post)?>
+				<!-- <h3>Share this story</h3> -->
+				<?php //echo story_social_sharing_buttons($post)?>
 			</div>
 		</div>
 		
