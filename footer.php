@@ -70,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="footer-widget col-md-4 col-sm-12">
 								<div class="footer-brand">
 									<img src="<?php echo get_template_directory_uri();?>/imgs/alp_footer_logo.svg"><br>
-									© <?php echo date("Y");?> Advanced Learning Partnerships LLC
+									© <?php echo date("Y");?> Advanced Learning Partnerships, Inc.
 								</div>
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer Far Left") ) : ?><?php endif;?>
 							</div>
