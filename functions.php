@@ -548,13 +548,14 @@ function get_the_timeline_events(){
       $event_id = get_sub_field('event_category');
       $event_category = get_term_by('id', $event_id, 'service')->name;
       $sub_cat_parent = get_term_by('id', $event_id, 'service')->parent;
+      $parent_slug = get_term_by('id', $sub_cat_parent, 'service')->slug;
       $sub_service = sanitize_title($event_category);
       $event_descriptor = get_sub_field('event_descriptor');
       $event_img = get_sub_field('event_image')['sizes'][ 'partner-thumb' ];
       
       $html .= '<div class="row event"><div class="col-md-2 event-col"><span class="timeline-time"><i class="fa fa-calendar"></i></i>'. $the_event_time .'</span></div>';
 
-    $html .= '<div class="col-md-6 timeline-details"><div class="circle-icon icon-' . $sub_service . '"></div><a href="'.timeline_service_link($sub_cat_parent, $sub_service).'" data-toggle="tooltip" data-placement="right" title="Read about this service"><h2>'. $event_category.'</h2></a>';
+    $html .= '<div class="col-md-6 timeline-details"><div class="circle-icon '. $parent_slug .' icon-' . $sub_service . '"></div><a href="'.timeline_service_link($sub_cat_parent, $sub_service).'" data-toggle="tooltip" data-placement="right" title="Read about this service"><h2>'. $event_category.'</h2></a>';
 
     $html .= '<p class="timeline-para">'.$event_descriptor.'</p>';
     $html .= '<a class="timeline-read-more" href="'.timeline_service_link($sub_cat_parent, $sub_service).'">Read about this service <i class="arrow-right"></i></a>';
