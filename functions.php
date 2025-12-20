@@ -1786,12 +1786,16 @@ function popular_get_the_story_lead($id){
 //SINGLE STORY
 
 function story_social_links($author){
+  if($author == 'ALP Guest Blogger'){
+    $html = '<a class="story-soc" href="https://linkedin.com/company/advanced-learning-partnerships-inc/"><i class="story-soc-icon linkedin"></i>Connect with ALP on linkedin</a>';
+  } else {
   $faculty_page = get_page_by_title( $author, OBJECT, 'faculty' );
   $id = $faculty_page->ID;
   $name = $faculty_page->post_title;
   //$twitter = '<a class="story-soc" href="https://twitter.com/'.story_twitter_account($id).'"><i class="story-soc-icon twitter"></i>Follow on Twitter</a>';
   $linked = '<a class="story-soc" href="'.story_linked_account($id).'"><i class="story-soc-icon linkedin"></i>Connect with ' . $name . ' on linkedin</a>';
-  $html =  $linked;
+  $html = $linked;
+  }
   return $html;
 }
 
