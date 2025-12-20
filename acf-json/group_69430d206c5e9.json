@@ -1,0 +1,48 @@
+{
+    "key": "group_69430d206c5e9",
+    "title": "Multiple Authors",
+    "fields": [
+        {
+            "key": "field_69430d2083ae3",
+            "label": "Authors",
+            "name": "authors",
+            "aria-label": "",
+            "type": "user",
+            "instructions": "If you'd like to have multiple authors listed, select all the desired authors below.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "role": "",
+            "return_format": "array",
+            "multiple": 1,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1766002010
+}

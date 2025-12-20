@@ -1788,8 +1788,9 @@ function popular_get_the_story_lead($id){
 function story_social_links($author){
   $faculty_page = get_page_by_title( $author, OBJECT, 'faculty' );
   $id = $faculty_page->ID;
-  $twitter = '<a class="story-soc" href="https://twitter.com/'.story_twitter_account($id).'"><i class="story-soc-icon twitter"></i>Follow on Twitter</a>';
-  $linked = '<a class="story-soc" href="'.story_linked_account($id).'"><i class="story-soc-icon linkedin"></i>Connect on linkedin</a>';
+  $name = $faculty_page->post_title;
+  //$twitter = '<a class="story-soc" href="https://twitter.com/'.story_twitter_account($id).'"><i class="story-soc-icon twitter"></i>Follow on Twitter</a>';
+  $linked = '<a class="story-soc" href="'.story_linked_account($id).'"><i class="story-soc-icon linkedin"></i>Connect with ' . $name . ' on linkedin</a>';
   $html =  $linked;
   return $html;
 }
@@ -2622,3 +2623,20 @@ function alp_topic_row_size($resources){
   }
 
 }
+
+function alp_post_multi_authors() {
+		$authors = get_field('authors');
+		if (!empty($authors)) {
+			$author_list = '<div class="multi-author-block">';
+			foreach ($authors as $author) {
+        $author_id = $author['ID'];
+        $author_name = get_the_author_meta('display_name', $author_id);
+        $link = story_social_links(get_the_author_meta('display_name', $author_id));
+        $author_list .= "<div>{$link}</div>";
+			}
+			$author_list .= '</div>';
+			return $author_list;
+		}	else {
+      return story_social_links(get_the_author_meta('display_name'));
+    }
+}	
