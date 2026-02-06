@@ -9,12 +9,20 @@
 </div>
 </div>
 </div>
-<div class="jumbotron jumbotron-home">
-	 <video autoplay muted loop id="homeVideo">
-	 	<source src="<?php echo get_template_directory_uri();?>/imgs/ALP_BackgroundVideo_v1_4.webm" type="video/webm">
-  		<source src="<?php echo get_template_directory_uri();?>/imgs/ALP_BackgroundVideo_v1_3.mp4" type="video/mp4">
-	</video>
-	 <div class="container home header">
+<div class="jumbotron jumbotron-home"
+	<?php if ( has_post_thumbnail() ) :
+		$bg = esc_url( get_the_post_thumbnail_url( null, 'full' ) );
+		echo " style=\"background-image: url('{$bg}'); background-size: cover; background-position: center;\"";
+	endif; ?>
+>
+	<?php if ( ! has_post_thumbnail() ) : ?>
+		<video autoplay muted loop id="homeVideo">
+			<source src="<?php echo esc_url( get_template_directory_uri() ); ?>/imgs/ALP_BackgroundVideo_v1_4.webm" type="video/webm">
+			<source src="<?php echo esc_url( get_template_directory_uri() ); ?>/imgs/ALP_BackgroundVideo_v1_3.mp4" type="video/mp4">
+		</video>
+	
+	<?php endif; ?>
+	<div class="container home header">
 	 	<div class="justify-content-md-center row">
           <h1 class="display-3 home-header-title col-md-10"><?php the_title();?></h1>
           <div class="col-md-10 home-header-details"><?php the_field('introduction');?></div>
