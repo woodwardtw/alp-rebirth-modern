@@ -28,21 +28,20 @@ $container = get_theme_mod( 'understrap_container_type' );
           <span aria-hidden="true" data-bs-dismiss="modal">Close <span class="close-x">X</span></span>
         </button>
       <div class="modal-header">
-        <h2 class="modal-title" id="contactModalLabel">Work with us</h2>        
+        <!-- <h2 class="modal-title" id="contactModalLabel">Work with us</h2>         -->
       </div>
       <div class="modal-message">
-      	<p>Tell us a little about yourself and how we might work together.</p>
+      	<!-- <p>Tell us a little about yourself and how we might work together.</p>
       	<div class="modal-required">
       		*All fields are required.
-      	</div>
+      	</div> -->
       </div>
       <div class="modal-body">
        <?php //echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]');?>
-	   ﻿<script src="https://js.hsforms.net/forms/embed/49604150.js" defer></script>
-		<div class="hs-form-frame" data-region="na1" data-form-id="b84bdba5-f028-43c8-9be1-75fd072e896c" data-portal-id="49604150"></div>
+		<iframe src="https://forms.monday.com/forms/embed/ab6ae8b02a333468dea90f4bb14455f1?r=use1" width="100%" height="1200" style="border: 0; margin: 0 auto; display: block;"></iframe>
 			<div class="modal-bottom">
-				<h3>Other ways we can connect</h3>
-				<p>&nbsp;</p>
+				<!-- <h3>Other ways we can connect</h3>
+				<p>&nbsp;</p> -->
 				<div class="modal-social">
 					<a href="https://www.linkedin.com/company/advanced-learning-partnerships-inc"><div class="modal-linkedin"></div>Follow us on LinkedIn</a> 
 				<!-- 					<a href="https://www.linkedin.com/company/advanced-learning-partnerships-inc/"><div class="modal-linkedin"></div>connect on linkedin</a>

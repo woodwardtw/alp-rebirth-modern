@@ -5866,7 +5866,8 @@ button.close {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: rgb(255, 255, 255);
+  border-radius: 0;
+  background-color: $blue;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -5934,6 +5935,14 @@ button.close {
   width: 50px;
   height: 50px;
   overflow: scroll;
+}
+
+.modal-social{
+  padding: 20px;
+}
+
+.modal-header {
+  display: none;
 }
 
 @media (min-width: 576px) {
@@ -15797,8 +15806,10 @@ blockquote.default {
   font-size: 16px;
 }
 
-.modal-content {
-  border-radius: 0;
+
+.modal-bottom{
+  background-color: $white;
+  padding: 20px 0;
 }
 
 .close {
