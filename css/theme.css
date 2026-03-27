@@ -23521,7 +23521,7 @@ button.close {
   width: 100%;
   pointer-events: auto;
   border-radius: 0;
-  background-color: rgb(0, 175, 215);
+  background-color: #00b2e2;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
